@@ -650,6 +650,18 @@ body {
     float: right;
 }
 
+/* sermons */
+.downloadlink {
+    text-transform: uppercase;
+    color: #1B2130;
+    font-size: 11px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.downloadlink:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 960px) {
     #header,
     #header .article,
