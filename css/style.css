@@ -371,9 +371,7 @@ body {
 	margin: 0;
 	padding: 0 15px 0 0;
 	z-index: 5;
-    float: left;
-    width: 220px;
-    height: auto;
+    float: right;
 }
 #body div .section .newsletter a {
     color: #f5f5f5;
