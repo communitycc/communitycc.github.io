@@ -22,6 +22,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
+body.plain {
+    background: #ededed;
+}
 .visualClear {
     display: block;
     clear: both;
