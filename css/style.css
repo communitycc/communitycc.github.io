@@ -680,6 +680,9 @@ body.plain {
 #sermons hr {
     margin-top: 1em;
 }
+.series {
+    float: right;
+}
 
 @media screen and (max-width: 960px) {
     #header,
