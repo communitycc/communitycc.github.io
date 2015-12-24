@@ -30,6 +30,17 @@ body.plain {
     clear: both;
     height: 0;
 }
+.hiddenStructure {
+    display: block;
+    background: transparent;
+    background-image: none;
+    border: none;
+    height: 0.1em;
+    overflow: hidden;
+    padding: 0;
+    margin: -0.1em 0 0 -0.1em;
+    width: 1px;
+}
 #header {
 	margin: 0 auto;
 	padding: 0;
@@ -46,6 +57,7 @@ body.plain {
 	padding: 10px;
 	border: 4px solid #181D30;
     background-color: #ffffff;
+    overflow: hidden;
 }
 #header .section .logo h1 {
     margin: 0;
