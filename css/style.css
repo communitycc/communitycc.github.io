@@ -120,8 +120,9 @@ h2 span {
     background-size: cover;
     background-attachment: fixed;
 }
-#location p {
+#location .staticLeft {
     float: left;
+    width: calc(90% - 420px);
 }
 iframe {
     float: right;
@@ -194,6 +195,16 @@ li .selected::after {
     border-radius: 15px;
     padding: 15px;
     margin-top: 20px;
+}
+#audio > div {
+    display: none;
+}
+#audio > div.selected {
+    display: block;
+}
+#audio img {
+    float: right;
+    height: 70px;
 }
 #audio h3 {
     margin: 0;
