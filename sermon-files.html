@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-<!-- Website Template by freewebsitetemplates.com -->
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -14,8 +13,26 @@
     <script type="text/javascript" src="css/mediaelementjs/mediaelement.min.js"></script>
 </head>
 <body id="sermons" class="plain">
-	<div id="body">
-        <h2>Sermon Archive</h2>
+	<div id="audio">
+        
+        <div class="selected"
+             data-date="2016-02-14">
+            <img src="sermons/maintain.png" />
+            <h3>Communication</h3>
+            <p class="date">February 14</p>
+            <p class="series">Series: How to Maintain Relationships</p>
+            <audio controls="">
+            <source src="sermons/2016-02-14.m4a" type="audio/mpeg"></source>
+            <object width="" height="" type="application/x-shockwave-flash" data="sermons/mediaelementjs/flashmediaelement.swf">
+                <param name="audio" value="sermons/mediaelementjs/flashmediaelement.swf" />
+                <param name="flashvars" value="file=sermons/2016-02-14.m4a" />
+            </object>
+            </audio>
+            <p class="download">
+                <a href="sermons/2016-02-14.m4a" class="downloadlink" title="Download this sermon">Download</a>
+                (right click and choose "Save Link As...")
+            </p>
+        </div>
 
 	<h4>Flirt</h4>
         <p class='sermonInfo'>
@@ -89,13 +106,6 @@
         <a href="sermons/2016-01-03.m4a" class="downloadlink" title="Download this sermon">Download</a>
 
 
-	</div>
-	<div id="footer">
-		<div>
-			<p>
-				&copy;2016 | Community Christian Church | Fayetteville, AR
-			</p>
-		</div>
 	</div>
 </body>
 </html>

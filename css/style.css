@@ -34,6 +34,13 @@ h1 .title {
 h1 img {
     width: 375px;
 }
+a {
+    opacity: 0.7;
+    text-decoration: none;
+}
+a:hover {
+    opacity: 1;
+}
 .intro {
     float: right;
     width: 44%;
@@ -73,6 +80,7 @@ nav a:visited {
     margin: 0 5px;
     text-decoration: none;
     text-transform: uppercase;
+    opacity: 1;
 }
 nav a:hover {
     background-color: #41376b;
@@ -232,9 +240,69 @@ li .selected::after {
     background-size: cover;
     background-attachment: fixed;
 }
+#contact .maincol {
+    text-align: center;
+}
+#contact a {
+    color: #333333;
+    text-decoration: none;
+}
+#contact a:nth-of-type(odd) {
+    margin-right: 10px;
+}
 
 @media screen and (max-width: 1080px) {
-    .maincol {
+    .maincol,
+    header {
         width: 96.72%;
+    }
+}
+@media screen and (max-width: 900px) {
+    h1,
+    .intro,
+    #location .staticLeft,
+    #about aside,
+    #sermons main,
+    #audio {
+        float: none;
+        width: 96%;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    h1 {
+        margin-left: 0;
+    }
+    nav {
+        position: static !important;
+        margin-bottom: 0;
+    }
+    nav a {
+        display: inline-block;
+        width: 105px;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    nav a:nth-of-type(4) {
+        clear: left;
+    }
+    iframe {
+        float: none;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 700px) {
+    #contact a {
+        display: block;
+    }
+}
+@media screen and (max-width: 400px) {
+    img,
+    h1 img,
+    iframe {
+        max-width: 100%;
+        width: auto;
+    }
+    h2 {
+        font-size: 50px;
     }
 }
