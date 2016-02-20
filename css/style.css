@@ -196,6 +196,9 @@ li .selected::after {
     width: 50%;
     float: left;
 }
+#sermons a {
+    color: #62b2bf;
+}
 #audio {
     float: right;
     width: 40%;
