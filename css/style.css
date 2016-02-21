@@ -339,6 +339,11 @@ li .selected::after {
         margin: 0 auto;
     }
 }
+@media screen and (max-width: 768px) {
+    h2 {
+        background-attachment: scroll !important;
+    }
+}
 @media screen and (max-width: 700px) {
     .contentcol,
     .imagecol {
@@ -360,8 +365,5 @@ li .selected::after {
     }
     h2 {
         font-size: 50px;
-    }
-    h2 {
-        background-attachment: scroll !important;
     }
 }
