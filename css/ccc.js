@@ -14,6 +14,10 @@
         $(this).toggleClass("active");
         $("nav").toggleClass("displayNav");
     });
+    $("nav a").click(function(){
+        $("#nav-toggle").removeClass("active");
+        $("nav").removeClass("displayNav");
+    });
     
     // sermons - hover title to load audio
     $("#sermons li span").hover(function() {
