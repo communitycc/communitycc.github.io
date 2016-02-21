@@ -86,6 +86,20 @@ nav a:hover {
     background-color: #41376b;
 }
 
+.contentcol {
+    float: left;
+    width: 65%;
+}
+.imagecol {
+    float: right;
+    width: 30%;
+}
+.imagecol img,
+.imagecol iframe {
+    max-width: 100%;
+    width: auto;
+}
+
 h2 {
     font-size: 80px;
     color: #ffffff;
@@ -127,13 +141,6 @@ h2 span {
     background: url('../images/building.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
-}
-#location .staticLeft {
-    float: left;
-    width: calc(90% - 420px);
-}
-iframe {
-    float: right;
 }
 #about {
     background-color: #dfeaeb;
@@ -263,7 +270,6 @@ li .selected::after {
 @media screen and (max-width: 900px) {
     h1,
     .intro,
-    #location .staticLeft,
     #about aside,
     #sermons main,
     #audio {
@@ -294,6 +300,13 @@ li .selected::after {
     }
 }
 @media screen and (max-width: 700px) {
+    .contentcol,
+    .imagecol {
+        float: none;
+        width: 96%;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
     #contact a {
         display: block;
     }
