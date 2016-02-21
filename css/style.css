@@ -361,4 +361,7 @@ li .selected::after {
     h2 {
         font-size: 50px;
     }
+    h2 {
+        background-attachment: scroll !important;
+    }
 }
