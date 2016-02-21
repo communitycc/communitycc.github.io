@@ -163,3 +163,13 @@ body.plain {
         padding: 10px 0;
     }
 }
+@media screen and (max-width: 450px) {
+    img {
+        max-width: 100%;
+        width: auto;
+    }
+    .appcol {
+        width: 96%;
+        padding: 0 2%;
+    }
+}
