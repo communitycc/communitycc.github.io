@@ -11,7 +11,8 @@
     
     // mobile - display navigation/search when toggle button is clicked
     $("#nav-toggle").click(function(){
-        $("#nav").toggleClass("displayNav");
+        $(this).toggleClass("active");
+        $("nav").toggleClass("displayNav");
     });
     
     // sermons - hover title to load audio
