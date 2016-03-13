@@ -126,6 +126,7 @@ nav a:hover {
     float: right;
     width: 30%;
 }
+.contentcol img,
 .imagecol img,
 .imagecol iframe {
     max-width: 100%;
