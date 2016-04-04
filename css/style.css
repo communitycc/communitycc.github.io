@@ -286,12 +286,16 @@ li .selected::after {
 #contact .maincol {
     text-align: center;
 }
+#contact p {
+    margin: 0 0 10px;
+}
 #contact a {
     color: #333333;
     text-decoration: none;
+    margin-right: 25px;
 }
-#contact a:nth-of-type(odd) {
-    margin-right: 10px;
+#contact a:last-of-type {
+    margin-right: 0;
 }
 
 @media screen and (max-width: 1080px) {
