@@ -268,11 +268,11 @@
                     <i class="fa fa-facebook-official"></i>
                     Facebook
                 </a>
-                <a href="mailto:info@communitycc.us">
+                <a href="mailto:info@communitycc.us" class="infoLink">
                     <i class="fa fa-envelope"></i>
                     info@communitycc.us
                 </a>
-                <a href="mailto:prayers@communitycc.us">
+                <a href="mailto:prayers@communitycc.us" class="prayerLink">
                     <i class="fa fa-comment"></i>
                     Send us a prayer request
                 </a>
@@ -288,6 +288,40 @@
             </p>
         </div>
     </section>
+    
+
+    <form action="https://formspree.io/info@communitycc.us"
+          method="POST" id="info-form" class="overlayForm">
+        <div class="closeOverlay">X</div>
+        <h3>Request information or provide comments</h3>
+        <p>Provide your email or phone number if you would like
+            someone to be in contact with you</p>
+        <input type="text" name="name" placeholder="Name (Required)">
+        <input type="email" name="_replyto" placeholder="Email">
+        <input type="text" name="phone" placeholder="Phone number">
+        <textarea rows="4" cols="50" name="comments"
+            placeholder="Questions/Comments (Required)"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_subject"
+            value="Information request via communitycc.us" />
+        <input type="submit" value="Send">
+    </form>
+    <form action="https://formspree.io/prayers@communitycc.us"
+          method="POST" id="prayer-form" class="overlayForm">
+        <div class="closeOverlay">X</div>
+        <h3>Submit a prayer request</h3>
+        <p>Provide your email or phone number if you would like
+            someone to be in contact with you</p>
+        <input type="text" name="name" placeholder="Name (Required)">
+        <input type="email" name="_replyto" placeholder="Email">
+        <input type="text" name="phone" placeholder="Phone number">
+        <textarea rows="4" cols="50" name="prayer_request"
+            placeholder="Prayer Request (Required)"></textarea>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_subject"
+            value="New prayer request via communitycc.us" />
+        <input type="submit" value="Send">
+    </form>
     
 </body>
 </html>
