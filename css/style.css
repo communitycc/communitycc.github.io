@@ -401,6 +401,7 @@ body.formOpen::before {
     .overlayForm {
         top: 5px;
         height: 87%;
+        z-index: 11;
     }
 }
 @media screen and (max-width: 768px) {
