@@ -15,34 +15,38 @@ Prepare the Website Files
 * Right click on index.html, Open in Notepad
 * Copy one of the blocks of HTML for the sermon, and paste a new one at the top of the section
 
-    <div class="selected" 
-         data-date="2016-06-19">
-        <img src="sermons/wisdom.jpg" />
-        <h3>The Heart</h3>
-        <p class="date">June 19</p>
-        <p class="series">Series: Way of Wisdom</p>
-        <audio controls="">
-        <source src="sermons/2016-06-19.m4a" type="audio/mpeg"></source>
-        <object width="" height="" type="application/x-shockwave-flash" data="sermons/mediaelementjs/flashmediaelement.swf">
-            <param name="audio" value="sermons/mediaelementjs/flashmediaelement.swf" />
-            <param name="flashvars" value="file=sermons/2016-06-19.m4a" />
-        </object>
-        </audio>
-        <p class="download">
-            <a href="sermons/2016-06-19.m4a" class="downloadlink" title="Download this sermon">Download</a>
-            (right click and choose "Save Link As...")
-        </p>
-    </div>
+```html
+<div class="selected" 
+     data-date="2016-06-19">
+    <img src="sermons/wisdom.jpg" />
+    <h3>The Heart</h3>
+    <p class="date">June 19</p>
+    <p class="series">Series: Way of Wisdom</p>
+    <audio controls="">
+    <source src="sermons/2016-06-19.m4a" type="audio/mpeg"></source>
+    <object width="" height="" type="application/x-shockwave-flash" data="sermons/mediaelementjs/flashmediaelement.swf">
+        <param name="audio" value="sermons/mediaelementjs/flashmediaelement.swf" />
+        <param name="flashvars" value="file=sermons/2016-06-19.m4a" />
+    </object>
+    </audio>
+    <p class="download">
+        <a href="sermons/2016-06-19.m4a" class="downloadlink" title="Download this sermon">Download</a>
+        (right click and choose "Save Link As...")
+    </p>
+</div>
+```
 
 * Make sure to update each place the date appears (5 places), the title, Series, and artwork if there is analytics
 * Only the new sermon should have ```class="selected"```. Remove it from any other block.
 * Then update the link for the sermon. Copy one of the ```<li>```s and paste a new one at the top
 
-    <li><span class="selected"
-        data-datenum="2016-08-21">
-        August 21 - Revelation 3:1-6
-        </span>
-    </li>
+```html
+<li><span class="selected"
+    data-datenum="2016-08-21">
+    August 21 - Revelation 3:1-6
+    </span>
+</li>
+```
 
 * Update both dates and the title
 * Only the new link should have ```class="selected"```. Remove it from any other block.
