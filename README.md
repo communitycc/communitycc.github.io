@@ -1,4 +1,4 @@
-Recording
+﻿Recording
 ---------
 
 Use Audacity for recording
@@ -11,6 +11,7 @@ Prepare the Website Files
 -------------------------
 
 * Open Github (Start > All Apps > Github, Inc > Github)
+* Click ```Sync``` in the upper right
 * Right click on ``community.github.io``, Open in Explorer
 * Right click on index.html, Open in Notepad
 * Copy one of the blocks of HTML for the sermon, and paste a new one at the top of the section
