@@ -3,7 +3,7 @@ Recording
 
 Use Audacity for recording
 * From the start of the sermon to just before the prayer at the end
-* Save the audio file using the date as the filename (2016-09-27)
+* Save the audio file using the date as the filename (2016-06-19)
 * Then File > Export Audio…
 * Keep the filename, save as M4A
 
@@ -42,8 +42,8 @@ Prepare the Website Files
 
 ```html
 <li><span class="selected"
-    data-datenum="2016-08-21">
-    August 21 - Revelation 3:1-6
+    data-datenum="2016-06-19">
+    June 19 - The Heart
     </span>
 </li>
 ```
