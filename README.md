@@ -10,7 +10,7 @@ Use Audacity for recording
 Prepare the Website Files
 -------------------------
 
-* Open Github (Start > All Apps > Github, Inc, Github)
+* Open Github (Start > All Apps > Github, Inc > Github)
 * Right click on ``community.github.io``, Open in Explorer
 * Right click on index.html, Open in Notepad
 * Copy one of the blocks of HTML for the sermon, and paste a new one at the top of the section
@@ -36,7 +36,7 @@ Prepare the Website Files
 </div>
 ```
 
-* Make sure to update each place the date appears (5 places), the title, Series, and artwork if there is analytics
+* Make sure to update each place the date appears (5 places), the title, Series, and artwork if there is any (if not, remove the ```<img>``` tag)
 * Only the new sermon should have ```class="selected"```. Remove it from any other block.
 * Then update the link for the sermon. Copy one of the ```<li>```s and paste a new one at the top
 
