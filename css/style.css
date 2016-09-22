@@ -184,21 +184,33 @@ h2 span {
     background-attachment: fixed;
 }
 #about aside {
-    width: 43%;
+    box-sizing: border-box;
+    width: 32%;
+    margin: 0 2% 1em 0;
     float: left;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    padding: 15px;
+    padding: 40px 15px 15px 15px;
 }
 #about aside:last-of-type {
-    float: right;
+    margin-right: 0;
+}
+#about aside h3,
+#about aside h4 {
+    text-align: center;
+    margin: 0;
+}
+#about aside h4 {
+    height: 50px;
 }
 #about aside img {
-    float: right;
-    padding: 0 0 15px 15px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
 }
 #children {
     background-color: #62b2bf;
+    clear: both;
 }
 #children h2 {
     background: url('../images/childrens-area.jpg') no-repeat top center;
