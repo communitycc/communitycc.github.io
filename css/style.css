@@ -162,7 +162,7 @@ h2 span {
     background-color: #62b2bf;
 }
 #services h2 {
-    background: url('../images/sanctuary.jpg') no-repeat top center;
+    background: url('../images/content/sermon.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -180,6 +180,7 @@ h2 span {
 }
 #about h2 {
     background: url('../images/content/sermon.jpg') no-repeat top center;
+    background: url('../images/sanctuary.jpg') no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
 }
