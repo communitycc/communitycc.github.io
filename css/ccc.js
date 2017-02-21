@@ -27,6 +27,17 @@
         $("#audio .selected").removeClass("selected");
         $("#audio [data-date='" + datenum + "']").addClass("selected");
     });
+    
+    // obfuscate email addresses
+    obfnum = $(".obfuscate").length;
+    if (obfnum > 0) $(".replaceAt").replaceWith("@");
+    for(i = 0; i < obfnum; i++) {
+         var $link = $(".obfuscate").eq(i)
+         $link.attr("href", "mailto:"+$('.obfuscate').eq(i).find(".email").text());
+         if ($link.hasClass("obText")){
+             $link.find(".email").remove();
+         }
+    }
 
     // display forms
     function displayForm(formID) {
