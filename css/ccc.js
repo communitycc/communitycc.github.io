@@ -52,6 +52,10 @@
         displayForm("#prayer-form");
         return false;
     })
+    $(".classLink").click(function(){
+        displayForm("#class-form");
+        return false;
+    })
 
     // close when clicking outside form or hitting escape
     $(document).on('keyup',function(evt) {
