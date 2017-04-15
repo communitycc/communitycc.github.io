@@ -113,6 +113,26 @@ body.plain {
     opacity: 1;
 }
 
+/* indiv forms */
+#signup-form {
+	background: #ffffff;
+	padding: 30px;
+}
+#signup-form input {
+	width: 100%;
+	font-size: 20px;
+	border-radius: 4px;
+	margin-bottom: 2em;
+	padding: 5px;
+}
+.appcol .btn {
+	background: #ffffff;
+	border: #cccccc;
+	padding: 5px 20px;
+	display: inline-block;
+	border-radius: 4px;
+}
+
 @media screen and (max-width: 960px) {
     #header,
     #header .article,
