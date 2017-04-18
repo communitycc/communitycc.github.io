@@ -186,13 +186,10 @@ h2 span {
     background-attachment: fixed;
 }
 #about aside {
-    box-sizing: border-box;
-    width: 32%;
-    margin: 0 2% 1em 0;
-    float: left;
     background: rgba(0, 0, 0, 0.1);
     border-radius: 15px;
-    padding: 40px 15px 15px 15px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 #about aside:last-of-type {
     margin-right: 0;
@@ -206,9 +203,12 @@ h2 span {
     height: 50px;
 }
 #about aside img {
-    display: block;
-    margin: 0 auto;
-    padding: 15px 0;
+    float: right;
+    padding: 0 15px;
+}
+#about aside:nth-of-type(odd) img {
+    float: left;
+    padding: 0 15px;
 }
 #children {
     background-color: #62b2bf;
