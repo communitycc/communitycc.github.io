@@ -10,6 +10,9 @@ header {
     margin: 0 auto;
     padding: 0 1.64% 50px;
 }
+header.short {
+    padding-bottom: 0;
+}
 .maincol {
     width: 1040px;
     margin: 0 auto;
@@ -26,6 +29,9 @@ h1 {
     margin: 50px 0 0 50px;
     float: left;
 }
+header.short h1 {
+    margin-top: 0;
+}
 h1 .title {
     text-indent: -700px;
     display: block;
@@ -38,7 +44,8 @@ a {
     opacity: 0.7;
     text-decoration: none;
 }
-a:hover {
+a:hover,
+h1 a {
     opacity: 1;
 }
 .intro {
@@ -344,6 +351,9 @@ body.formOpen::before {
     font-family: 'Questrial', Arial, sans-serif;
     font-weight: bold;
     cursor: pointer;
+}
+.overlayForm iframe {
+    height: 750px !important;
 }
 .overlayForm h3 {
     margin-top: 0;
