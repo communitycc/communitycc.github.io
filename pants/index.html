@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bitter:700" rel="stylesheet"> 
     <style type="text/css">
         body {
-            background: url("denim.jpg") repeat;
+            background: #c9ebf0;
             font-family: 'Poppins', sans-serif;
             font-size: 20px;
             line-height: 110%;
@@ -46,28 +46,24 @@
             margin: 0 auto;
         }
         .container {
-            background-color: #e9ebf0;
             padding: 1px 20px;
             width: 700px;
             margin: 0 auto;
+            position: relative;
+        }
+        #header {
+            background-color: #e9ebf0;
+        }
+        #body {
+            background-color: #c9ebf0;
+        }
+        #locations {
+            background-color: #e9ebf0;
         }
         .visualClear {
             clear: both;
             display: block;
             height: 0;
-        }
-        .column {
-            box-sizing: border-box;
-            float: left;
-            width: 38%;
-        }
-        .col1 {
-            margin-right: 4%;
-            width: 58%;
-        }
-        .col2 {
-            padding-left: 40px;
-            border-left: 1px solid #bbbbbb;
         }
         
         ul {
@@ -76,12 +72,14 @@
         }
         li {
             padding-bottom: 20px;
-            border-bottom: #bbbbbb 1px solid;
             margin-bottom: 20px;
             font-size: 16px;
+            width: 40%;
+            float: left;
         }
-        li:last-of-type {
-            border-bottom: none;
+        li:nth-of-type(odd) {
+            clear: left;
+            margin-right: 20%;
         }
         li img {
             display: block;
@@ -92,24 +90,25 @@
         .ccclogo {
             margin-top: 2em;
         }
-        .btn {
-            background: #000000;
+        .btn,
+        .btn:visited {
+            background: #387a9a;
             color: #ffffff;
             text-decoration: none;
             border: none;
             padding: 5px 10px;
-            display: block;
             text-align: center;
+            border-radius: 5px;
+            position: absolute;
+            margin-top: -45px;
+            right: 0;
         }
         .btn:hover {
             background: #666666;
         }
-        .dropoff::after {
-            content: 'to the right'
-        }
         .ls-logo {
-            display: block;
-            margin: 10px auto;
+            float: right;
+            margin: 0 0 15px 15px;
         }
         @media screen and (max-width: 700px) {
             .container {
@@ -121,16 +120,19 @@
             body {
                 font-size: 16px;
             }
-            .column {
-                width: 100%;
+            h1 img {
+                width: 75%;
+                height: 75%
+            }
+            .btn {
+                position: static;
+                display: inline-block;
+                margin: 10px auto;
+            }
+            li {
                 float: none;
-            }
-            .col2 {
-                border-left: none;
-                padding-left: 0;
-            }
-            .dropoff::after {
-                content: 'below'
+                width: 100%;
+                margin: 0;
             }
         }
     </style>
@@ -147,17 +149,25 @@
     </script>
 </head>
 <body>
-    <div class="container">
-        <h1>
-            <img src="pants-logo.png" alt="Summer of Pants">
-        </h1>
-        <div class="column col1">
+    <section id="header">
+        <div class="container">
+            <h1>
+                <img src="pants-logo.png" alt="Summer of Pants">
+            </h1>
+            <a class="btn" href="#locations">Drop-off Locations &gt;</a>
+            <div class="visualClear"></div>
+        </div>
+    </section>
+    
+    <section id="body">
+        <div class="container">
             <p>We want your pants. Not the ones you're wearing right now, but your
                 gently used pants that you would be willing to give to charity.
                 <strong><a href="http://communitycc.us">Community Christian Church</a></strong>
                 is partnering with several businesses in Northwest Arkansas to accept clothing that
                 will be passed on to LifeSource International.</p>
-            <p><strong><a href="http://lifesourceinternational.org">LifeSource International</a></strong>
+            <p><img src="lifesource.png" alt="LifeSource Logo" class="ls-logo">
+                <strong><a href="http://lifesourceinternational.org">LifeSource International</a></strong>
                 is in desperate need of used men's clothing.
                 LifeSource offers free resources for low income families.
                 This includes a food pantry, after-school events, summer camp,
@@ -176,10 +186,12 @@
                 every 100 pounds of clothing the drive receives.</p>
             <p>Clothing can be dropped off directly at LifeSource (602 South
                 School Avenue in Fayetteville), or at one of the drop off
-                locations listed <span class="dropoff"></span>.</p>
-            <img src="lifesource.png" alt="LifeSource Logo" class="ls-logo">
+                locations listed below.</p>
         </div>
-        <div class="column col2">
+    </section>
+    
+    <section id="locations">
+        <div class="container">
             <h2>Drop-off Locations</h2>
             <ul>
                 <li><a href="https://agents.farmers.com/ar/fayetteville/jeffrey-danley">
@@ -203,6 +215,6 @@
             </ul>
         </div>
         <div class="visualClear"></div>
-    </div>
+    </section>
 </body>
 </html>
