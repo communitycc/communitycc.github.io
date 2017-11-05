@@ -277,6 +277,7 @@ li .selected::after {
 #audio img {
     float: right;
     height: 70px;
+    padding: 0 0 10px 10px;
 }
 #audio h3 {
     margin: 0;
