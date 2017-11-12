@@ -239,8 +239,9 @@ h2 span {
     list-style: none none;
 }
 #sermons li {
-    line-height: 25px;
-    cursor: pointer
+    line-height: 20px;
+    cursor: pointer;
+    margin-bottom: 9px;
 }
 li .selected {
     font-weight: bold;
